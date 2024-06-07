@@ -111,7 +111,7 @@ class _StockItemsScreenState extends State<StockItemsScreen> {
               icon: const Icon(
                 Icons.add,
                 size: 35,
-                color: MyColors.primary,
+                color: Colors.white,
               ),
               onPressed: () async {
                 await Get.to(() => StockItemCreateScreen(StockItemModel()));
@@ -122,7 +122,7 @@ class _StockItemsScreenState extends State<StockItemsScreen> {
             IconButton(
               icon: Icon(
                 searchMode ? Icons.close : Icons.search,
-                color: Colors.black,
+                color: Colors.white,
               ),
               onPressed: () {
                 setState(() {

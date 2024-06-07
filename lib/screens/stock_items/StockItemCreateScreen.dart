@@ -13,6 +13,7 @@ import 'package:get/get.dart';
 
 import '../../model/Utils.dart';
 import '../stock_categories/StockSubCategoriesScreen.dart';
+import 'ImageUploadingScreen.dart';
 
 class StockItemCreateScreen extends StatefulWidget {
   StockItemModel item;
@@ -63,6 +64,15 @@ class _StockItemCreateScreenState extends State<StockItemCreateScreen> {
             key: _formKey,
             child: Column(
               children: [
+                SizedBox(
+                  height: 15,
+                ),
+
+                InkWell(
+                    onTap: () {
+                      Get.to(() => ImageUploadingScreen());
+                    },
+                    child: Text("TEST PHOTO UPLOAD")),
                 SizedBox(
                   height: 15,
                 ),

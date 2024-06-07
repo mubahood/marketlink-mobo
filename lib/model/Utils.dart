@@ -282,13 +282,13 @@ class Utils {
     }
   }
 
-  static final String API_URL = "https://invetotrack.ugnews24.info/api/";
+  // static final String API_URL = "https://invetotrack.ugnews24.info/api/";
 
-  // static final String API_URL = "http://10.0.2.2:8888/inveto-track-web/api/";
+  static final String API_URL = "http://10.0.2.2:8888/marketlink-web-main/api/";
 
   static final int APP_VERSION = 1;
   static final String DATABASE_PATH = "INVETO_TRACK_${APP_VERSION}";
-  static final String APP_NAME = "Mubahood Weds Romina";
+  static final String APP_NAME = "MarketLink";
 
   static Future<Database> getDb() async {
     return await openDatabase(DATABASE_PATH, version: APP_VERSION);

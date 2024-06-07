@@ -5,17 +5,21 @@ import 'package:flutter_ui/model/ContributionRecordModel.dart';
 import 'package:flutter_ui/model/LoggedInUser.dart';
 import 'package:flutter_ui/model/StockItemModel.dart';
 import 'package:flutter_ui/screens/Auth/LandingScreen.dart';
+import 'package:flutter_ui/screens/reports/FinancialReportsScreen.dart';
 import 'package:flutter_ui/screens/stock_categories/StockCategoriesScreen.dart';
 import 'package:flutter_ui/screens/stock_categories/StockSubCategoriesScreen.dart';
+import 'package:flutter_ui/screens/stock_items/StockItemsScreen.dart';
 import 'package:get/get.dart';
 
 import '../model/Utils.dart';
+import '../widget/widgets.dart';
 import 'Common/AboutScreen.dart';
 import 'Common/ContactUsScreen.dart';
 import 'MenuRoute2.dart';
 import 'budget_management/budget/BudgetItemCategoriesScreen.dart';
 import 'budget_management/contributions/ContributionRecordsScreen.dart';
 import 'employees/EmployeesScreen.dart';
+import 'finance/TransactionList.dart';
 import 'financial_periods/FinancialPeriodsScreen.dart';
 
 class MenuRoute extends StatefulWidget {
@@ -129,7 +133,7 @@ class _MenuRouteState extends State<MenuRoute> {
                                       SizedBox(
                                         height: 15,
                                       ),
-                                      /*Row(
+                                      Row(
                                         children: [
                                           SizedBox(
                                             width: 15,
@@ -139,8 +143,8 @@ class _MenuRouteState extends State<MenuRoute> {
                                             'Manage all your sales in one place.',
                                             Icons.shopping_cart,
                                             () {
-                                              Get.to(
-                                                  () => StockRecordsScreen());
+/*                                              Get.to(
+                                                  () => StockRecordsScreen());*/
                                             },
                                           ),
                                           SizedBox(
@@ -238,7 +242,7 @@ class _MenuRouteState extends State<MenuRoute> {
                                                 color: MyColors.primary,
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.w900),
-                                          )),*/
+                                          )),
                                     ],
                                   ),
                                 ),
@@ -248,14 +252,14 @@ class _MenuRouteState extends State<MenuRoute> {
                       childCount: 1, // 1000 list items
                     ),
                   ),
-                  /* SliverList(
+                  SliverList(
                     delegate: SliverChildBuilderDelegate(
                       (BuildContext context, int index) {
                         return stockItemTile(stole_items[index], false);
                       },
                       childCount: stole_items.length, // 1000 list items
                     ),
-                  ),*/
+                  ),
                 ],
               ),
             )
